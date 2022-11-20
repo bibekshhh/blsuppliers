@@ -1,0 +1,31 @@
+.acc_info_dash{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+.acc_info_dash div{
+    flex: 1;
+}
+.acc_info_dash div table{
+    table-layout: fixed;
+    background: ;
+    border: 1px solid #dddd;
+    border-top: 5px solid #1a82c7;
+    border-radius: 5px;
+    text-align: left;
+}
+.acc_info_dash div table thead{
+    background-color: lawngreen !important;
+    width: inherit;
+    position: relative;
+    vertical-align: middle;
+}
+.acc_info_dash div table thead th i{
+    position: absolute;
+    right: 20px;
+}
+.acc_info_dash div table tbody tr td:first-child{
+    opacity: 0.85;
+  }

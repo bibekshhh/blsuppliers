@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    font-size: 14px;
+  }
+  
+  .container-main{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  }
+  /* ---------- */
+
+  .nav-content{
+    padding-bottom: 50px;
+  }
+  .tab-pane{
+    padding-bottom: 5px;
+    
+  }
+  /* ----------general input, submit & select css----------- */
+  
+  input{
+    background: transparent;
+  }
+  input, #submit, #ex_submit, select, textarea{
+    box-sizing: border-box;
+    border: 1px solid #dddd;
+  /* border-bottom: 2.35px solid transparent; */
+  border-radius: 2.5px;
+  outline: none;
+  height: 42.5px;
+  width: 195px;
+  text-indent: 10px;
+  box-shadow: inset 0.05px 0.05px 0.05px 0.05px #dddd !important;
+  resize: none;
+  }
+  input:focus, #submit:focus{
+    border: 1px solid rgba(94, 159, 245, 0.867) !important;
+  }
+  #submit, #ex_submit{
+    border-radius: 5px;
+  text-indent: 0;
+  width: 140px;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  }
+  #submit:hover, #ex_submit:hover{
+    color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+  }
+  select{
+    background: white;
+  }
+  select option{
+    background: white;;
+  }
+
+  table thead{
+    box-sizing: border-box;
+    border: 2px solid transparent;
+  }
+  td{
+    text-align: center;
+  }
+  td:nth-child(1),
+  tr th:nth-child(1){
+    text-align: left;
+  }
+  tr th{
+    text-align: center;
+  }
+   table tr{
+     vertical-align:middle;
+   }
+ 
+  
+
+  .inv_list_tbody tr td p.btn-outline-success,
+.inv_list_tbody tr td p.btn-outline-danger,
+.inv_list_tbody tr td button.btn-pending,
+#tbody1 tr td button.btn-unpaid,
+#tbody1 tr td button.btn-warn,
+#tbody1 tr td button.btn-pending{
+  background: #E8F5E9;
+  padding: 2px 10px;
+  margin: 0;
+  font-size: small;
+  color: #027a32;
+  border: 1px solid transparent !important;
+  width: 65px;
+}
+
+.inv_list_table tr td button.btn-pending,
+#tbody1 tr td button.btn-pending{
+  background: #E3F2FD !important;
+  color: #31a3f5 !important;
+}
+#tbody1 tr td button.btn-warn{
+  background: #FFFDE7;
+  color: #F9A825;
+}
+
+
+#tbody1 tr td button.btn-unpaid,
+.inv_list_tbody tr td p.btn-outline-danger,
+#tbody1 tr td button.btn-unpaid {
+  background: #FBE9E7;
+  color: #DD2C00;
+  border: 1px solid transparent !important;
+}
+.inv_list_tbody tr td:last-child button.btn-outline-success:hover{
+  border: 1px solid #05963f !important;
+}
+  
+
+  .tab-pane > .container_tab, .container_tab-form, .ex_container_tab, .ex_dashboard, .de_container,
+  .invoice_container, #invoiceData, .invoice_list_container, .charts-container,
+  .loanData_total_wrapper, .leadger-book-container, .invoice-list-container{
+      width: calc(100% - 40px);
+      display: block;
+      height: auto;
+      background: white;
+      margin-left: 12.5px;
+      margin-top: 20px;
+      padding: 12px;
+      position: relative;
+      overflow-x: hidden;
+  }
+  .charts-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 40px);
+    position: relative;
+  }
+  .charts-container > div:first-child,
+  .charts-container > div:nth-child(2){
+   border: 1px solid #eeee;
+   margin: 15px;
+  }
+  .charts-container > div:last-child{
+    border: 1px solid #eeee;
+  }
+
+  /* p tag container header */
+  .div_heading{
+    font-size: 18px;
+    margin: 15px 0 -15px 12.5px;
+  }
+
+ /* tabpane inside nav control */
+  .tab-pane div:first-of-type nav button{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-left: 1px solid transparent !important;
+}
+.tab-pane div:first-of-type nav button:hover{
+    border-left: 1px solid #dddd !important;
+}
+.tab-pane div:first-of-type nav button.active{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 4px solid #1a82c7;
+    border-left: 1px solid #dddd !important;
+    background: white !important;
+}
+.tab-pane div:first-of-type nav button:hover{
+    background-color: rgb(250, 253, 255);
+}
+
+ /* close button general css */
+  .btn-close,
+  .close{
+    width: 32px;
+    max-width: 32px;
+    height: 32px;
+    max-height: 32px;
+    border: 0px;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc !important;
+    color: black !important;
+    font-size: 20px;
+    opacity: 1;
+  }
+  .close:hover{
+    background-color: #dddd;
+  }
+  .close:focus{
+    transform: scale(0.95);
+    background: #ccc;
+  }
+
+  /* div.modal-backdrop{
+    opacity: 0 !important;
+  } */
+
+  .dropdown-menu a.dropdown-item.active{
+    background-color: #E0E0E0 !important;
+  }
+
+input[type="text"]:disabled{
+  background: transparent;
+  border: unset;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+
+.btn-primary{
+  background: #0f68ee !important;
+}
+.btn-primary:hover{
+  background: #0d54be !important;
+}
+
+.modal-content{
+  border-radius: 0px !important;
+}
+.modal-header{
+  width: 100.1%;
+  background-color: #258cec;
+  color: white;
+  border-radius: 0px !important;
+}
+
+
+
+
+
+
+
+   /* general scrollbar css */
+   ::-webkit-scrollbar {
+    display: block;
+  width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: transparent; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  opacity: 0;
+  background: #dddd; 
+  border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgba(68,72,87,0.7); 
+  }
+
+  ::-webkit-inner-spin-button{
+    display: none;
+    opacity: 0;
+}
